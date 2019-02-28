@@ -1,0 +1,34 @@
+{
+  "name": "auth-ii",
+  "version": "1.0.0",
+  "description": "## Topics",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-sessions": "^1.0.6",
+    "helmet": "^3.15.1",
+    "jsonwebtoken": "^8.5.0",
+    "knex": "^0.16.3",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "server": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelliraehanson/auth-ii.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelliraehanson/auth-ii/issues"
+  },
+  "homepage": "https://github.com/kelliraehanson/auth-ii#readme"
+}

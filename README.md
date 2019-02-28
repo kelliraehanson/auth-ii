@@ -1,4 +1,4 @@
-# Authentication using JSON Web Tokens (JWTs) hi
+# Authentication using JSON Web Tokens (JWTs) 
 
 ## Topics
 
