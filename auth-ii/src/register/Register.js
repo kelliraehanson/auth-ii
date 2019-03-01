@@ -17,7 +17,7 @@ class Register extends Component {
             <input
                 name="username"
                 value={this.state.username}
-                onChange={this.handleChange}
+                onChange={this.handleInputChange}
                 placeholder='Name'
                 type="text"
             />
@@ -28,7 +28,7 @@ class Register extends Component {
             <input
                 name="password"
                 value={this.state.password}
-                onChange={this.handleChange}
+                onChange={this.handleInputChange}
                 placeholder='Password'
                 type="text"
             />
@@ -39,7 +39,7 @@ class Register extends Component {
             <input
                 name="department"
                 value={this.state.department}
-                onChange={this.handleChange}
+                onChange={this.handleInputChange}
                 placeholder='Department'
                 type="text"
             />
@@ -62,9 +62,10 @@ class Register extends Component {
     }
 
     handleSubmit = e => {
-        // e.preventDefault();
+        e.preventDefault();
 
-        const endpoint = 'http://localhost:5555/api/register';
+
+        const endpoint = '/register';
 
         
         axios
@@ -75,7 +76,7 @@ class Register extends Component {
             this.props.history.push('/login');
         })
         .catch(err => {
-            console.log('Error from Login', err)
+            console.log('Error from Login', err.response)
         })
     }
 }

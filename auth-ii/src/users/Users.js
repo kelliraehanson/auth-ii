@@ -14,7 +14,7 @@ class Users extends React.Component {
         <h2>List of Users</h2>
         <ul>
           {this.state.users.map(u => (
-            <li key={u.id}>{u.username}</li>
+            <li key={u.id}>Username: {u.username} department: {u.department}</li>
           ))}
         </ul>
       </>
